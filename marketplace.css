@@ -1,5 +1,5 @@
 /* Reset some default styles */
-body, h1, h2, p, ul, li, table, th, td {
+body, h1, h2, p, ul, li, form, select, div, img, button {
     margin: 0;
     padding: 0;
 }
@@ -36,11 +36,11 @@ nav ul {
 nav a {
     text-decoration: none;
     color: white;
-    padding: 3px 25px; 
+    padding: 3px 25px;
 }
 
 nav a.selected {
-    background-color: #4a4b4a;
+    background-color: #697669;
     border-radius: 0.5mm; 
 }
 
@@ -61,37 +61,69 @@ section {
     border-top: 2px solid #4CAF50;
 }
 
-.event-card, .contact-card {
+#location-form {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+#location-form label {
+    margin-right: 10px;
+}
+
+.product-card {
+    width: 200px;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 10px;
-    margin-bottom: 10px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
 }
 
-.event-card a.register-button {
-    display: inline-block;
+.product-card img {
+    max-width: 100%;
+}
+
+.buy-button {
     background-color: #4CAF50;
     color: white;
     padding: 5px 10px;
+    border: none;
     border-radius: 5px;
-    text-decoration: none;
+    cursor: pointer;
     margin-top: 10px;
-    font-weight: bold;
 }
 
-.event-card a.register-button:hover {
+.buy-button:hover {
     background-color: #45A049;
 }
 
-#volunteer-schedule table {
-    width: 100%;
-    border-collapse: collapse;
+#subscription-popup {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
 }
 
-#volunteer-schedule th, #volunteer-schedule td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
+#subscribe-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+ 
+}
+
+#subscribe-button:hover {
+    background-color: #45A049;
 }
 
 footer {
@@ -100,4 +132,7 @@ footer {
     text-align: center;
     padding: 10px;
 }
-
+#subscription-paragraph {
+    font-style: italic;
+    margin-top: 20px;
+}

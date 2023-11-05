@@ -1,5 +1,5 @@
 /* Reset some default styles */
-body, h1, h2, p, ul, li {
+body, h1, h2, p, ul, li, form, textarea, input, button {
     margin: 0;
     padding: 0;
 }
@@ -61,22 +61,39 @@ section {
     border-top: 2px solid #4CAF50;
 }
 
-#carousel {
-    text-align: center;
-}
-
-.image-carousel {
-    display: flex;
-    justify-content: space-between;
+#discussion-form {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
     margin-top: 20px;
 }
 
-.image-carousel img {
-    max-width: 30%;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin: 5px;
+#message {
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+    margin-bottom: 10px;
 }
+
+#attachment {
+    margin-bottom: 10px;
+}
+
+.warning {
+    font-style: italic;
+    color: #FF0000;
+    margin-bottom: 10px;
+}
+
+#discussion-form button {
+    background-color: #9d9e9d;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 footer {
     background-color: #333;
@@ -84,6 +101,29 @@ footer {
     text-align: center;
     padding: 10px;
 }
+#chat-access {
+    position: relative;
+    background: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
 
-/* Add more CSS styles as needed */
+
+
+#lock-message {
+    font-style: italic;
+    color: #333;
+}
+
+#lock-message a {
+    color: #4CAF50;
+}
+
+#lock-message a:hover {
+    text-decoration: underline;
+}
+
 
